@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// You'll need to install react-icons: npm install react-icons
 import { FaHtml5, FaCss3Alt, FaJs, FaPhp, FaDatabase, FaReact } from 'react-icons/fa';
 
 const About = () => {
@@ -15,7 +14,7 @@ const About = () => {
   ];
 
   return (
-    <section className="about-section" id="about">
+    <section className="about-section fixed-section" id="about">
       <Container fluid>
         <motion.div
           initial={{ opacity: 0 }}

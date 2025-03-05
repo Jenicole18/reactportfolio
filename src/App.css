@@ -268,7 +268,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Fixed Hero Section Styles */
 .fixed-hero {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -280,6 +280,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 80px 0 0 0; /* Adjusted padding to account for navbar */
   display: flex;
   align-items: center;
+}
+
+.fixed-section {
+  position: relative;
+  z-index: 2;
+  margin-top: 0 !important; /* Override the 100vh margin */
+  padding-top: 100px; /* Add padding to account for navbar */
+  min-height: 100vh;
+  background-color: #151c28;
 }
 
 /* Adjust the main content container to account for fixed hero */
@@ -380,6 +389,7 @@ nav.navbar {
   overflow: hidden;
   width: 100%; /* Ensure 100% width */
   max-width: 100%; /* Prevent any max-width constraints */
+  margin-top: 0 !important;
 }
 
 .about-section::before {
