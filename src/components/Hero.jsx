@@ -6,10 +6,10 @@ const Hero = () => {
   const navigate = useNavigate();
   
   return (
-    <section className="hero fixed-hero" id="home">
+    <section className="hero" id="home">
       <Container fluid="lg">
-        <Row className="align-items-center">
-          <Col xs={12} md={6} xl={6} className="d-flex justify-content-center justify-content-md-start">
+        <Row className="align-items-center flex-column flex-md-row">
+          <Col xs={12} md={6} xl={6} className="text-center text-md-start">
             <div className="hero-content">
               <span className="tagline">Welcome to my Portfolio</span>
               <h1>Hi, I'm Jennifer Nicole Cerbas</h1>

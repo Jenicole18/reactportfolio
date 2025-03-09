@@ -29,8 +29,8 @@ const About = () => {
             </Col>
           </Row>
           
-          <Row className="align-items-center about-content">
-            <Col lg={5} className="about-image-col">
+          <Row className="align-items-center flex-column-reverse flex-lg-row about-content">
+            <Col xs={12} lg={5} className="mb-4 mb-lg-0 about-image-col">
               <div className="about-image-container">
                 <div className="about-image-bg"></div>
                 <img src="../cerbas.jpeg" alt="About Me" className="about-image" />
@@ -41,7 +41,7 @@ const About = () => {
               </div>
             </Col>
             
-            <Col lg={7} className="about-text-col">
+            <Col xs={12} lg={7} className="about-text-col">
               <h3 className="hello-text">Hello, I'm <span className="highlight">Jennifer Nicole Cerbas</span></h3>
               <h4 className="profession">Frontend Developer & UI/UX Enthusiast</h4>
               
