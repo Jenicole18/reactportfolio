@@ -4,11 +4,10 @@ import './App.css';
 import NavBar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-
-// Create placeholder components for routes
-const Projects = () => <div className="page-section"><h1>Projects Page</h1></div>;
-const Skills = () => <div className="page-section"><h1>Skills Page</h1></div>;
-const Contact = () => <div className="page-section"><h1>Contact Page</h1></div>;
+import Blog from './components/Blog';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 // Main Home component that includes Hero
 const Home = () => (
@@ -25,8 +24,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

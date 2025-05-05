@@ -13,8 +13,9 @@ const NavBar = () => {
     const currentPath = location.pathname;
     if (currentPath === '/') setActiveLink('home');
     else if (currentPath === '/about') setActiveLink('about');
+    else if (currentPath === '/blog') setActiveLink('blog');
+    else if (currentPath === '/experience') setActiveLink('experience');
     else if (currentPath === '/projects') setActiveLink('projects');
-    else if (currentPath === '/skills') setActiveLink('skills');
     else if (currentPath === '/contact') setActiveLink('contact');
   }, [location]);
 
@@ -64,19 +65,27 @@ const NavBar = () => {
             </Nav.Link>
             <Nav.Link 
               as={NavLink} 
+              to="/blog" 
+              className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} 
+              onClick={() => onUpdateActiveLink('blog')}
+            >
+              Blog
+            </Nav.Link>
+            <Nav.Link 
+              as={NavLink} 
+              to="/experience" 
+              className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'} 
+              onClick={() => onUpdateActiveLink('experience')}
+            >
+              Experience
+            </Nav.Link>
+            <Nav.Link 
+              as={NavLink} 
               to="/projects" 
               className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} 
               onClick={() => onUpdateActiveLink('projects')}
             >
               Projects
-            </Nav.Link>
-            <Nav.Link 
-              as={NavLink} 
-              to="/skills" 
-              className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} 
-              onClick={() => onUpdateActiveLink('skills')}
-            >
-              Contact
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
