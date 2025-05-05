@@ -135,10 +135,9 @@ const Contact = () => {
                       </div>
                       <div className="contact-text">
                         <h4>Phone</h4>
-                        <a href="tel:+639682091295">+63 968 209 1295</a>
+                        <a href="tel:+639682091295">+639682091295</a>
                       </div>
                     </div>
-                    
                     <div className="contact-item">
                       <div className="contact-icon-wrapper">
                         <FaMapMarkerAlt className="contact-icon" />
